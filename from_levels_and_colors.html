@@ -7,24 +7,24 @@
         <title>Drawing a pseudo-colour blockplot (pcolormesh) in matplotlib with levels and specific colours | The miscellany of a scientific coder</title>
         <meta charset="utf-8" />
         
-        <link rel="stylesheet" href="/theme/css/layout.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="/theme/css/ipython.css" type="text/css" />
-        <link rel="stylesheet" href="/theme/css/post_colours.css" type="text/css">
+        <link rel="stylesheet" href="http://pelson.github.io/theme/css/layout.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="http://pelson.github.io/theme/css/ipython.css" type="text/css" />
+        <link rel="stylesheet" href="http://pelson.github.io/theme/css/post_colours.css" type="text/css">
         
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 
-        <link href="/" type="application/atom+xml" rel="alternate" title="The miscellany of a scientific coder ATOM Feed" />
+        <link href="http://pelson.github.io/" type="application/atom+xml" rel="alternate" title="The miscellany of a scientific coder ATOM Feed" />
     </head>
 
 <body id="body_home">
     <div id="header-wrap">
         <div id="header">
-            <h1><a href="/index.html">The miscellany of a scientific coder</a></h1>
+            <h1><a href="http://pelson.github.io/index.html">The miscellany of a scientific coder</a></h1>
             <ul id="site-navigation">
-                <li ><a href="/archives.html">Archive</a></li>
+                <li ><a href="http://pelson.github.io/archives.html">Archive</a></li>
                 
-                                <li class="active"><a href="/category/python.html">Python</a></li>
+                                <li class="active"><a href="http://pelson.github.io/category/python.html">Python</a></li>
                             </ul>
         </div>
     </div>
@@ -39,48 +39,11 @@
             <div class="date entry-info"><p>Fri 03 May 2013</p></div>
             <div class="entry">
                 <p>I recently added a new function to matplotlib to make it easier to draw pseudo-colour
-plots given specific levels and colours in exactly the same way you can with contour and contourf.</p>
+plots given specific levels and colours, in exactly the same way as you can with contour
+and contourf.</p>
 
 
 <p>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>I've submitted a <a href="https://github.com/matplotlib/matplotlib/pull/2050">PR to matplotlib</a> which simplifies the creation of a discrete level to colour mapped norm and cmap. This came about because of a <a href="https://groups.google.com/forum/#!topic/scitools-iris/BMbQl0S2WNo">discussion on the iris-users Google group</a>.</p>
-<p>This notebook demonstrates the use of the new from_levels_and_colors function for generation of pcolormesh type plots.</p>
-<p>Please note: the PR has not yet been merged, and API may change in the future - but hopefully not too much ;-)</p>
-</div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[1]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight-ipynb"><pre class="ipynb"><span class="kn">import</span> <span class="nn">matplotlib</span>
-<span class="n">matplotlib</span><span class="o">.</span><span class="n">__version__</span>
-</pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt output_prompt">
-    Out[1]:</div>
-<div class="box-flex1 output_subarea output_pyout">
-
-
-<pre>
-&apos;1.3.x&apos;
-</pre>
-
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
@@ -491,7 +454,7 @@ sBgKGwAAAAAAAIv5X7PsmSDd0a+cAAAAAElFTkSuQmCC
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Note: The following requires a patch to cartopy to support v1.3 which is not yet in PR form.</p>
+<p>Lets go ahead and start using the new from_levels_and_colors function.</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
@@ -2284,7 +2247,7 @@ RU5ErkJggg==
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For the record, the PR also adds a new method on a colormap instance to quickly see what it looks like:</p>
+<p>For the record, the PR also adds a new method on a colormap instance to quickly see what it looks like (EDIT: Sadly, this was removed from the pull request):</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
@@ -2509,20 +2472,6 @@ SUxMlAYNGiS6DKNISUmRnn76acnT01MKDAyUcnNzRZfU7ObOnSt5eHhI7du3l0aOHCnduXNHdElN
             
                                     
             <div class="sidebar-entry">
-                <div class="share_links">
-                    <!-- AddThis Button BEGIN -->
-                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-522212f734811969"></script>
-                    <!-- AddThis Button END -->
-
-                   <h4>Share</h4>
-                   <a class="addthis_button_google_plusone" g:plusone:size="medium"></a> 
-                   <a class="addthis_button_tweet" tw:via="addthis"></a> 
-                   <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-                   <a class="addthis_button_linkedin_counter"></a>
-                   <a class="addthis_button_stumbleupon_badge"></a> 
-                </div>
-            </div>
-            <div class="sidebar-entry">
                 <div class="widget social">
                     <h4>Around the web</h4>
                     <ul>
@@ -2556,7 +2505,7 @@ SUxMlAYNGiS6DKNISUmRnn76acnT01MKDAyUcnNzRZfU7ObOnSt5eHhI7du3l0aOHCnduXNHdElN
                             </a>
                         </li>
                         
-                        <li><a href="/feeds/atom.xml">
+                        <li><a href="http://pelson.github.io/feeds/atom.xml">
                             <i class="icon-rss icon-3x"></i>
                             ATOM feed
                             </a>
@@ -2580,17 +2529,33 @@ SUxMlAYNGiS6DKNISUmRnn76acnT01MKDAyUcnNzRZfU7ObOnSt5eHhI7du3l0aOHCnduXNHdElN
                 <ul class="categories">
                 
                                     <li class="active">
-                        <a href="/tag/python.html">Python</a>
+                        <a href="http://pelson.github.io/tag/python.html">Python</a>
                     </li>
                                     <li class="active">
-                        <a href="/tag/matplotlib.html">matplotlib</a>
+                        <a href="http://pelson.github.io/tag/matplotlib.html">matplotlib</a>
                     </li>
                                 </ul>
             </div>
                         
             
                         
-                    </div>                  
+                        
+            <div class="sidebar-entry">
+                <div class="share_links">
+                    <!-- AddThis Button BEGIN -->
+                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-522212f734811969"></script>
+                    <!-- AddThis Button END -->
+
+                   <h4>Share this page</h4>
+                   <a class="addthis_button_google_plusone" g:plusone:size="medium"></a> 
+                   <a class="addthis_button_tweet" tw:via="addthis"></a> 
+                   <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                   <a class="addthis_button_linkedin_counter"></a>
+                   <a class="addthis_button_stumbleupon_badge"></a> 
+                </div>
+            </div>
+            
+        </div>                  
     </div><!-- END RIGHT -->
     </div><!-- END CONTENT WRAPPER -->   
            
@@ -2599,19 +2564,23 @@ SUxMlAYNGiS6DKNISUmRnn76acnT01MKDAyUcnNzRZfU7ObOnSt5eHhI7du3l0aOHCnduXNHdElN
     <div id="footer-wrapper">
         <div id="footer">
             <p id="footer-copy">&copy; 2010-2013 Philip Elson</p>
-            <p id="footer-links"><a href="/pages/about.html">About me</a> | <a href="/pages/credits.html">Credits</a></p>
+            <p id="footer-links"><a href="http://pelson.github.io/pages/about.html">About me</a> | <a href="http://pelson.github.io/pages/credits.html">Credits</a></p>
             <!-- <q id="quote">Something witty.</q> -->
         </div>
     </div>
     <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-29774503-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
     </script>
-    <script type="text/javascript">
-    try {
-        var pageTracker = _gat._getTracker("UA-43268601-1");
-    pageTracker._trackPageview();
-    } catch(err) {}</script>
     
 </body>
 </html>

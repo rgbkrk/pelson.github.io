@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The miscellany of a scientific coder</title><link href="/" rel="alternate"></link><link href="/feeds/python.atom.xml" rel="self"></link><id>/</id><updated>2013-06-03T12:00:00+01:00</updated><entry><title>Working with colours in matplotlib</title><link href="/working-with-colors-in-mpl.html" rel="alternate"></link><updated>2013-06-03T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:,2013-06-03:working-with-colors-in-mpl.html</id><summary type="html">&lt;p&gt;I wanted to take a moment to demonstarte working with colours in matplotlib&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The miscellany of a scientific coder</title><link href="http://pelson.github.io/" rel="alternate"></link><link href="http://pelson.github.io/feeds/python.atom.xml" rel="self"></link><id>http://pelson.github.io/</id><updated>2013-06-03T12:00:00+01:00</updated><entry><title>Working with colours in matplotlib</title><link href="http://pelson.github.io/working-with-colors-in-mpl.html" rel="alternate"></link><updated>2013-06-03T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2013-06-03:working-with-colors-in-mpl.html</id><summary type="html">&lt;p&gt;When dealing with colours in scientific visualisations some people like to have a colourmap
+which can be indexed into to pick specific colours. Whilst this isn't necessarily the best
+way of handling colours in matplotlib, it certainly adds a degree of familiarity to users
+who have come over from other visualisation tools, such as IDL.&lt;/p&gt;
+&lt;p&gt;In this article I'll cover one approach to using the colour-by-index paradigm in matplotlib.&lt;/p&gt;
 
 
 &lt;p&gt;
@@ -2570,49 +2574,18 @@ pgAAAAAgAsQUAAAAAETg/2/pg2vR5j2bAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;&lt;/p&gt;</summary><category term="matplotlib"></category><category term="Python"></category></entry><entry><title>Drawing a pseudo-colour blockplot (pcolormesh) in matplotlib with levels and specific colours</title><link href="/from_levels_and_colors.html" rel="alternate"></link><updated>2013-05-03T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:,2013-05-03:from_levels_and_colors.html</id><summary type="html">&lt;p&gt;I recently added a new function to matplotlib to make it easier to draw pseudo-colour
-plots given specific levels and colours in exactly the same way you can with contour and contourf.&lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;This article certainly shows a way of handling the colour-by-index paradigm,
+though it must be said that handling colours like this in matplotlib is not
+necessarily the best approach - I'll leave that to a future article.&lt;/p&gt;
+&lt;p&gt;Find this useful? How do you handle colours in your matplotlib figures? Is there a
+killer feature you think matplotlib is missing out on? Let me know via the comments
+section.&lt;/p&gt;</summary><category term="matplotlib"></category><category term="Python"></category></entry><entry><title>Drawing a pseudo-colour blockplot (pcolormesh) in matplotlib with levels and specific colours</title><link href="http://pelson.github.io/from_levels_and_colors.html" rel="alternate"></link><updated>2013-05-03T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2013-05-03:from_levels_and_colors.html</id><summary type="html">&lt;p&gt;I recently added a new function to matplotlib to make it easier to draw pseudo-colour
+plots given specific levels and colours, in exactly the same way as you can with contour
+and contourf.&lt;/p&gt;
 
 
 &lt;p&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;I've submitted a &lt;a href="https://github.com/matplotlib/matplotlib/pull/2050"&gt;PR to matplotlib&lt;/a&gt; which simplifies the creation of a discrete level to colour mapped norm and cmap. This came about because of a &lt;a href="https://groups.google.com/forum/#!topic/scitools-iris/BMbQl0S2WNo"&gt;discussion on the iris-users Google group&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This notebook demonstrates the use of the new from_levels_and_colors function for generation of pcolormesh type plots.&lt;/p&gt;
-&lt;p&gt;Please note: the PR has not yet been merged, and API may change in the future - but hopefully not too much ;-)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input hbox"&gt;
-&lt;div class="prompt input_prompt"&gt;
-In&amp;nbsp;[1]:
-&lt;/div&gt;
-&lt;div class="input_area box-flex1"&gt;
-&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib&lt;/span&gt;
-&lt;span class="n"&gt;matplotlib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__version__&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="vbox output_wrapper"&gt;
-&lt;div class="output vbox"&gt;
-
-
-&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
-    Out[1]:&lt;/div&gt;
-&lt;div class="box-flex1 output_subarea output_pyout"&gt;
-
-
-&lt;pre&gt;
-&amp;apos;1.3.x&amp;apos;
-&lt;/pre&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
 &lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
@@ -3023,7 +2996,7 @@ sBgKGwAAAAAAAIv5X7PsmSDd0a+cAAAAAElFTkSuQmCC
 
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Note: The following requires a patch to cartopy to support v1.3 which is not yet in PR form.&lt;/p&gt;
+&lt;p&gt;Lets go ahead and start using the new from_levels_and_colors function.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
 &lt;div class="input hbox"&gt;
@@ -4816,7 +4789,7 @@ RU5ErkJggg==
 
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;For the record, the PR also adds a new method on a colormap instance to quickly see what it looks like:&lt;/p&gt;
+&lt;p&gt;For the record, the PR also adds a new method on a colormap instance to quickly see what it looks like (EDIT: Sadly, this was removed from the pull request):&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
 &lt;div class="input hbox"&gt;
