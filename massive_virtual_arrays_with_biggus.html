@@ -36,7 +36,7 @@
 
         <div class="">
             <h4 id="single">Dealing with arrays which are bigger than memory - an intoduction to biggus</h4>
-            <div class="date entry-info"><p>Tue 10 September 2013</p></div>
+            <div class="date entry-info"><p>Wed 25 September 2013</p></div>
             <div class="entry">
                 <p>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -66,7 +66,7 @@ In&nbsp;[2]:
 <p>A very convenient and extremely large dataset is the map tile images made available via the folks over at mapquest.com. As some very rudimentary background, the map tiles are split into distinct zoom levels with each zoom level z having <code>2**z by 2**z</code> images of <code>256x256</code> pixels each. So at zoom level 0, there is 1 image to represent the whole globe, with a resolution of <code>256x256</code> pixels. At zoom level 1 that turns into 2x2 images, with a combined resolution of <code>512x512</code>. In the case of these images there is also an RGB channel, which means at zoom level 9 we have a combined resolution image of shape <code>(131072, 131072, 3)</code>.</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Ok, lets start by implementing a class which represents a given <code>x, y, z</code> map tile. We will also add a <code>__getitem__</code> method which actually retieves the data from the web server.</p>
+<p>Ok, lets start by implementing a class which represents a given <code>x, y, z</code> map tile. We will also add a <code>__getitem__</code> method which actually retrieves the data from the web server.</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
@@ -89,8 +89,8 @@ In&nbsp;[3]:
         <span class="c">#: A cached version of the array that is downloaded.</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_cached_array</span> <span class="o">=</span> <span class="bp">None</span>
         
-        <span class="c"># The required attributes of a &quot;concrete&quot; array, acording to biggus,</span>
-        <span class="c"># are &#39;ndim&#39;, &#39;dtype&#39;, and &#39;shape&#39;.</span>
+        <span class="c"># The required attributes of a &quot;concrete&quot; array, according</span>
+        <span class="c"># to biggus, are &#39;ndim&#39;, &#39;dtype&#39;, and &#39;shape&#39;.</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">ndim</span> <span class="o">=</span> <span class="mi">3</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">uint8</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">shape</span> <span class="o">=</span> <span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
@@ -3524,7 +3524,7 @@ In&nbsp;[15]:
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now for the magic. If you are running this notebook with an interactive matplotlib backend (which I encourage you to try) the following code will produce a standard matplotlib figure with an image of our zoom level 9 data (centered at Tenerife in the Canary Islands) which you can interactively pan and zoom in the same way as you can for any other matplotlib figure - the key difference is that the image that you are viewing is far larger than most machines could possibly hold in memory and therefore only the tiles which are currently being displayed are actually being downloaded from the server.</p>
+<p>Now for the magic. If you are running this notebook with an interactive matplotlib backend (which I encourage you to try) the following code will produce a standard matplotlib figure with an image of our zoom level 9 data (centered at Tenerife in the Canary Islands) which you can interactively pan and zoom in the same way as you can for any other matplotlib figure - the key difference is that the image that you are viewing is far larger than most machines could possibly hold in memory and therefore only the tiles which are currently being displayed are actually being downloaded from the server. [Note: This has been tested with v1.3.0 of matplotlib]</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
