@@ -135,6 +135,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>After what feels like years chipping away at the problem, not least from some awesome developers including the whole of the IPython development team, Michael Droetboom and Jason Grout, I recently closed the development loop and added a new matplotlib backend providing interactive figures in the IPython notebook environment.</p>
+
 </div>
 </div>
 </div></p>
@@ -146,20 +147,19 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The &quot;nbagg&quot; backend makes use of the familiar anti-grain geometry rendering engine, so your figures will render as they always have with other agg based backends, with the key difference that instead of an interactive GUI upon show, an inline interactive figure is displayed, complete with the &quot;pan/zoom&quot; and &quot;zoom to rectangle&quot; buttons, as can be seen in the following screenshot:</p>
-<p><img src="../images/nbagg_backend/screenshot.png" alt="screenshot"></p>
+<p>The "nbagg" backend makes use of the familiar anti-grain geometry rendering engine, so your figures will render as they always have with other agg based backends, with the key difference that instead of an interactive GUI upon show, an inline interactive figure is displayed, complete with the "pan/zoom" and "zoom to rectangle" buttons, as can be seen in the following screenshot:</p>
+<p><img src="screenshot.png" alt="screenshot"></p>
 <p>The backend itself is still very much a work in progress, but it is functional, and well worth trying out for yourself. Turning the backend on with v1.4+ of matplotlib (not yet released at time of writing) is as simple as:</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[1]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight-ipynb"><pre class="ipynb"><span class="kn">import</span> <span class="nn">matplotlib</span> 
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">matplotlib</span> 
 
 <span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s">&#39;nbagg&#39;</span><span class="p">)</span>
 </pre></div>
@@ -174,19 +174,18 @@ In&nbsp;[1]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now that we&#39;ve changed the backend, we can go ahead and import pyplot and produce a figure as normal:</p>
+<p>Now that we've changed the backend, we can go ahead and import pyplot and produce a figure as normal:</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[2]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight-ipynb"><pre class="ipynb"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -825,12 +824,12 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To avoid re-writing the matplotlib rendering engine in a browser compatible language (i.e. JavaScript), the nbagg backend requires a live IPython session for interactive figures. Notice however that in this static rendering of the notebook, we have a static image of the figure, akin to the existing IPython &quot;inline&quot; backend. As with the &quot;inline&quot; backend, it is only the snapshot of the figure which is preserved, rather than the figure instance itself (the ability to pickle a figure does make that a possibility though) - essentially, what this means is that we have an opportunity to interact with out data before the figure is cast in stone as an image.</p>
-<h2 id="features">Features</h2>
-<p>The &quot;nbagg&quot; backend has some pretty unique features which have the potential to be built upon in the future.</p>
+<p>To avoid re-writing the matplotlib rendering engine in a browser compatible language (i.e. JavaScript), the nbagg backend requires a live IPython session for interactive figures. Notice however that in this static rendering of the notebook, we have a static image of the figure, akin to the existing IPython "inline" backend. As with the "inline" backend, it is only the snapshot of the figure which is preserved, rather than the figure instance itself (the ability to pickle a figure does make that a possibility though) - essentially, what this means is that we have an opportunity to interact with out data before the figure is cast in stone as an image.</p>
+<h2 id="Features">Features<a class="anchor-link" href="#Features">&#182;</a></h2><p>The "nbagg" backend has some pretty unique features which have the potential to be built upon in the future.</p>
 <p>One interesting feature of a nbagg figure is that it can be displayed multiple times, with all views on the figure being updated simultaneously (even accross different browsers), so there is a real potential for some collaborative figure investigation when the concept of shared users becomes a reality in the notebook.</p>
-<p>I&#39;m keen to make this backend easy to extend such that its easy to add things such as an &quot;export to mpld3&quot; button, some snapshotting functionality so that notebook viewers can see multiple views of the same figure in a slideshow and I&#39;m sure there is a whole host of other cool functionality that could be added.</p>
+<p>I'm keen to make this backend easy to extend such that its easy to add things such as an "export to mpld3" button, some snapshotting functionality so that notebook viewers can see multiple views of the same figure in a slideshow and I'm sure there is a whole host of other cool functionality that could be added.</p>
 <p>Let me know what you think? Got any ideas on how to make this backend even better? Get in touch in the comments section.</p>
+
 </div>
 </div>
 </div></p>
@@ -870,7 +869,8 @@ if (IPython.notebook.kernel != null) {
             </header>
             <div class="body">
               <ul class="pelson-list">
-                 <li><a href="../2014/nbagg_backend.html">Interactive matplotlib figures in the IPython notebook - they've landed!</a></li>
+                 <li><a href="../2015/conda_execute.html">Running scripts in temporary conda environments with conda execute</a></li>
+                <li><a href="../2014/nbagg_backend.html">Interactive matplotlib figures in the IPython notebook - they've landed!</a></li>
                 <li><a href="../2013/massive_virtual_arrays_with_biggus.html">Dealing with arrays which are bigger than memory - an intoduction to biggus</a></li>
                 <li><a href="../2013/working_with_colors_in_matplotlib.html">Working with colours in matplotlib</a></li>
                 <li><a href="../2013/from_levels_and_colors.html">Drawing a pseudo-colour blockplot (pcolormesh) in matplotlib with levels and specific colours</a></li>
@@ -881,13 +881,16 @@ if (IPython.notebook.kernel != null) {
  
           <div class="aside-widget">
             <header>
-              <h3>Tags</h3>
+              <h3>Find other articles by tag</h3>
             </header>
             <div class="body">
               <ul class="tags">
 
                 <li >
                   <a href="../tag/biggus.html">biggus</a>
+                </li>
+                <li >
+                  <a href="../tag/conda.html">conda</a>
                 </li>
                 <li class="active" >
                   <a href="../tag/matplotlib.html">matplotlib</a>

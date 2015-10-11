@@ -113,8 +113,36 @@
   <div class="col-md-6 col-sm-6">
     <article class=" blog-teaser">
       <header>
+
+        <h3><a href="./2015/conda_execute.html">Running scripts in temporary conda environments with conda execute</a></h3>
+        <span class="meta">Sat 03 October 2015</span>
+        <hr>
+      </header>
+      <div class="body">
+        <p>Conda is awesome - it is a simple package manager which allows me to create isolated software environments
+much like virtualenv. Unlike virtualenv though it can handle any package type, not just python ones.</p>
+<p>The more I use it, the more I want to make use of conda's dependency tracking for my own simple scripts to
+ensure they were being executed in a suitable environment with the expected dependencies already installed.</p>
+<p><code>conda build</code> is an excellent tool for building your own distributions and sharing them on anaconda.org,
+but creating a distribution is tiresome if all you have is a single script, rather than a fully-fledged
+software package. That is where <code>conda execute</code> comes in.</p>
+
+      </div>
+      <div class="clearfix">
+        <a href="./2015/conda_execute.html" class="btn btn-pelson-one">Read more</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="row">
+
+  <div class="col-md-6 col-sm-6">
+    <article class=" blog-teaser">
+      <header>
         <a href="2014/nbagg_backend.html">
-        <img src="./images/nbagg_backend/thumb.png" class="rss-img" /> 
+        <img src="./images/nbagg_backend/thumb.png" class="rss-img" />
+        </a>
+
         <h3><a href="./2014/nbagg_backend.html">Interactive matplotlib figures in the IPython notebook - they've landed!</a></h3>
         <span class="meta">Tue 03 June 2014</span>
         <hr>
@@ -127,6 +155,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>After what feels like years chipping away at the problem, not least from some awesome developers including the whole of the IPython development team, Michael Droetboom and Jason Grout, I recently closed the development loop and added a new matplotlib backend providing interactive figures in the IPython notebook environment.</p>
+
 </div>
 </div>
 </div></p>
@@ -134,37 +163,6 @@
       </div>
       <div class="clearfix">
         <a href="./2014/nbagg_backend.html" class="btn btn-pelson-one">Read more</a>
-      </div>
-    </article>
-  </div>
-
-  <div class="row">
-
-  <div class="col-md-6 col-sm-6">
-    <article class=" blog-teaser">
-      <header>
-        <a href="2013/massive_virtual_arrays_with_biggus.html">
-        <img src="./images/massive_virtual_arrays_with_biggus/thumb.png" class="rss-img" /> 
-        <h3><a href="./2013/massive_virtual_arrays_with_biggus.html">Dealing with arrays which are bigger than memory - an intoduction to biggus</a></h3>
-        <span class="meta">Wed 25 September 2013</span>
-        <hr>
-      </header>
-      <div class="body">
-        <p>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>I often deal with huge gridded datasets which either stretch or indeed are beyond the limits of my computer&#39;s memory. In the past I&#39;ve implemented a couple of workarounds to help me handle this data to extract meaningful analyses from them. One of the most intuitive ways of reducing gridded datasets is through indexing/slicing and in this regard netcdf4-python&#39;s excellent ability to slice subsets of a larger NetCDF file is invaluable. The problem with the netcdf4-python implementation is that this capability is only available if you have NetCDF files, and doing any analysis on the data involves loading all of the data into memory in the form of a numpy array.</p>
-<p>That is where <a href="https://github.com/SciTools/biggus">biggus</a> steps in.</p>
-</div>
-</div>
-</div></p>
-
-      </div>
-      <div class="clearfix">
-        <a href="./2013/massive_virtual_arrays_with_biggus.html" class="btn btn-pelson-one">Read more</a>
       </div>
     </article>
   </div>
@@ -182,7 +180,8 @@
             </header>
             <div class="body">
               <ul class="pelson-list">
-                 <li><a href="./2014/nbagg_backend.html">Interactive matplotlib figures in the IPython notebook - they've landed!</a></li>
+                 <li><a href="./2015/conda_execute.html">Running scripts in temporary conda environments with conda execute</a></li>
+                <li><a href="./2014/nbagg_backend.html">Interactive matplotlib figures in the IPython notebook - they've landed!</a></li>
                 <li><a href="./2013/massive_virtual_arrays_with_biggus.html">Dealing with arrays which are bigger than memory - an intoduction to biggus</a></li>
                 <li><a href="./2013/working_with_colors_in_matplotlib.html">Working with colours in matplotlib</a></li>
                 <li><a href="./2013/from_levels_and_colors.html">Drawing a pseudo-colour blockplot (pcolormesh) in matplotlib with levels and specific colours</a></li>
@@ -193,13 +192,16 @@
    
           <div class="aside-widget">
             <header>
-              <h3>Tags</h3>
+              <h3>Find other articles by tag</h3>
             </header>
             <div class="body">
               <ul class="tags">
 
                 <li >
                   <a href="./tag/biggus.html">biggus</a>
+                </li>
+                <li >
+                  <a href="./tag/conda.html">conda</a>
                 </li>
                 <li >
                   <a href="./tag/matplotlib.html">matplotlib</a>
