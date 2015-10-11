@@ -2,48 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>./2015/conda_execute/</loc>
+    <loc>https://pelson.github.io/2015/conda_execute/</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>./2014/nbagg_backend/</loc>
+    <loc>https://pelson.github.io/2014/nbagg_backend/</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>./2013/massive_virtual_arrays_with_biggus/</loc>
+    <loc>https://pelson.github.io/2013/massive_virtual_arrays_with_biggus/</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>./2013/working_with_colors_in_matplotlib/</loc>
+    <loc>https://pelson.github.io/2013/working_with_colors_in_matplotlib/</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>./2013/from_levels_and_colors/</loc>
+    <loc>https://pelson.github.io/2013/from_levels_and_colors/</loc>
     <priority>0.8</priority>
   </url>
 
 
   <url>
-    <loc>./404.html</loc>
+    <loc>https://pelson.github.io/404.html</loc>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>./from_levels_and_colors.html</loc>
+    <loc>https://pelson.github.io/from_levels_and_colors.html</loc>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>./massive_virtual_arrays_with_biggus.html</loc>
+    <loc>https://pelson.github.io/massive_virtual_arrays_with_biggus.html</loc>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>./working_with_colors_in_matplotlib.html</loc>
+    <loc>https://pelson.github.io/working_with_colors_in_matplotlib.html</loc>
     <priority>1.0</priority>
   </url>
 

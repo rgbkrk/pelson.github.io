@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Phil Elson - Software | Science | Python</title><link href="http://pelson.github.io/" rel="alternate"></link><link href="http://pelson.github.io/feeds/atom.xml" rel="self"></link><id>http://pelson.github.io/</id><updated>2015-10-03T12:00:00+01:00</updated><entry><title>Running scripts in temporary conda environments with conda execute</title><link href="http://pelson.github.io/2015/conda_execute/" rel="alternate"></link><updated>2015-10-03T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2015-10-03:2015/conda_execute/</id><summary type="html">&lt;p&gt;Conda is awesome - it is a simple package manager which allows me to create isolated software environments
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Phil Elson - Software | Science | Python</title><link href="https://pelson.github.io/" rel="alternate"></link><link href="https://pelson.github.io/feeds/atom.xml" rel="self"></link><id>https://pelson.github.io/</id><updated>2015-10-03T12:00:00+01:00</updated><entry><title>Running scripts in temporary conda environments with conda execute</title><link href="https://pelson.github.io/2015/conda_execute/" rel="alternate"></link><updated>2015-10-03T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2015-10-03:2015/conda_execute/</id><summary type="html">&lt;p&gt;Conda is awesome - it is a simple package manager which allows me to create isolated software environments
 much like virtualenv. Unlike virtualenv though it can handle any package type, not just python ones.&lt;/p&gt;
 &lt;p&gt;The more I use it, the more I want to make use of conda's dependency tracking for my own simple scripts to
 ensure they were being executed in a suitable environment with the expected dependencies already installed.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;conda build&lt;/code&gt; is an excellent tool for building your own distributions and sharing them on anaconda.org,
 but creating a distribution is tiresome if all you have is a single script, rather than a fully-fledged
 software package. That is where &lt;code&gt;conda execute&lt;/code&gt; comes in.&lt;/p&gt;
-</summary><category term="Python"></category><category term="conda"></category></entry><entry><title>Interactive matplotlib figures in the IPython notebook - they've landed!</title><link href="http://pelson.github.io/2014/nbagg_backend/" rel="alternate"></link><updated>2014-06-03T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2014-06-03:2014/nbagg_backend/</id><summary type="html">&lt;p&gt;
+</summary><category term="Python"></category><category term="conda"></category></entry><entry><title>Interactive matplotlib figures in the IPython notebook - they've landed!</title><link href="https://pelson.github.io/2014/nbagg_backend/" rel="alternate"></link><updated>2014-06-03T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2014-06-03:2014/nbagg_backend/</id><summary type="html">&lt;p&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
@@ -17,7 +17,7 @@ software package. That is where &lt;code&gt;conda execute&lt;/code&gt; comes in.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
-</summary><category term="matplotlib"></category><category term="Python"></category></entry><entry><title>Dealing with arrays which are bigger than memory - an intoduction to biggus</title><link href="http://pelson.github.io/2013/massive_virtual_arrays_with_biggus/" rel="alternate"></link><updated>2013-09-25T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2013-09-25:2013/massive_virtual_arrays_with_biggus/</id><summary type="html">&lt;p&gt;
+</summary><category term="matplotlib"></category><category term="Python"></category></entry><entry><title>Dealing with arrays which are bigger than memory - an intoduction to biggus</title><link href="https://pelson.github.io/2013/massive_virtual_arrays_with_biggus/" rel="alternate"></link><updated>2013-09-25T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2013-09-25:2013/massive_virtual_arrays_with_biggus/</id><summary type="html">&lt;p&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
@@ -29,12 +29,12 @@ software package. That is where &lt;code&gt;conda execute&lt;/code&gt; comes in.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
-</summary><category term="matplotlib"></category><category term="Python"></category><category term="biggus"></category><category term="medium data"></category></entry><entry><title>Working with colours in matplotlib</title><link href="http://pelson.github.io/2013/working_with_colors_in_matplotlib/" rel="alternate"></link><updated>2013-06-03T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2013-06-03:2013/working_with_colors_in_matplotlib/</id><summary type="html">&lt;p&gt;When dealing with colours in scientific visualisations some people like to have a colourmap
+</summary><category term="matplotlib"></category><category term="Python"></category><category term="biggus"></category><category term="medium data"></category></entry><entry><title>Working with colours in matplotlib</title><link href="https://pelson.github.io/2013/working_with_colors_in_matplotlib/" rel="alternate"></link><updated>2013-06-03T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2013-06-03:2013/working_with_colors_in_matplotlib/</id><summary type="html">&lt;p&gt;When dealing with colours in scientific visualisations some people like to have a colourmap
 which can be indexed into to pick specific colours. Whilst this isn't necessarily the best
 way of handling colours in matplotlib, it certainly adds a degree of familiarity to users
 who have come over from other visualisation tools, such as IDL.&lt;/p&gt;
 &lt;p&gt;In this article I'll cover one approach to using the colour-by-index paradigm in matplotlib.&lt;/p&gt;
-</summary><category term="matplotlib"></category><category term="Python"></category></entry><entry><title>Drawing a pseudo-colour blockplot (pcolormesh) in matplotlib with levels and specific colours</title><link href="http://pelson.github.io/2013/from_levels_and_colors/" rel="alternate"></link><updated>2013-05-03T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2013-05-03:2013/from_levels_and_colors/</id><summary type="html">&lt;p&gt;I recently added a new function to matplotlib to make it easier to draw pseudo-colour
+</summary><category term="matplotlib"></category><category term="Python"></category></entry><entry><title>Drawing a pseudo-colour blockplot (pcolormesh) in matplotlib with levels and specific colours</title><link href="https://pelson.github.io/2013/from_levels_and_colors/" rel="alternate"></link><updated>2013-05-03T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2013-05-03:2013/from_levels_and_colors/</id><summary type="html">&lt;p&gt;I recently added a new function to matplotlib to make it easier to draw pseudo-colour
 plots given specific levels and colours, in exactly the same way as you can with contour
 and contourf.&lt;/p&gt;
 </summary><category term="matplotlib"></category><category term="Python"></category></entry></feed>
