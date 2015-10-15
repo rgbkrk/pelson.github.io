@@ -29,7 +29,7 @@ software package. That is where &lt;code&gt;conda execute&lt;/code&gt; comes in.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
-</summary><category term="matplotlib"></category><category term="Python"></category><category term="biggus"></category><category term="medium data"></category></entry><entry><title>Working with colours in matplotlib</title><link href="https://pelson.github.io/2013/working_with_colors_in_matplotlib/" rel="alternate"></link><updated>2013-06-03T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2013-06-03:2013/working_with_colors_in_matplotlib/</id><summary type="html">&lt;p&gt;When dealing with colours in scientific visualisations some people like to have a colourmap
+</summary><category term="matplotlib"></category><category term="Python"></category><category term="biggus"></category><category term="large data"></category></entry><entry><title>Working with colours in matplotlib</title><link href="https://pelson.github.io/2013/working_with_colors_in_matplotlib/" rel="alternate"></link><updated>2013-06-03T12:00:00+01:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2013-06-03:2013/working_with_colors_in_matplotlib/</id><summary type="html">&lt;p&gt;When dealing with colours in scientific visualisations some people like to have a colourmap
 which can be indexed into to pick specific colours. Whilst this isn't necessarily the best
 way of handling colours in matplotlib, it certainly adds a degree of familiarity to users
 who have come over from other visualisation tools, such as IDL.&lt;/p&gt;
