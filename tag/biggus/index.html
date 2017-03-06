@@ -134,16 +134,20 @@
                 </h3>
                 <div style="float: left; padding: 0.5em 1em 0.5em 0em;">
                   <time datetime="2013-09-25T12:00:00+01:00" class="icon"></time>
-                  <p class="year">
-                    <time datetime="2013-09-25T12:00:00+01:00" class="icon">2013</time>
-                  </p>
-                  <p class="month">
-                    <time datetime="2013-09-25T12:00:00+01:00" class="icon">September</time>
-                  </p><time datetime="2013-09-25T12:00:00+01:00" class="icon"><span class="day">25</span></time>
+                  <div class="time-icon">
+                    <p class="year">
+                      2013
+                    </p>
+                    <p class="month">
+                      September
+                    </p><span class="day">25</span>
+                  </div>
                 </div><a href="2013/massive_virtual_arrays_with_biggus/"><img src="https://pelson.github.io/images/massive_virtual_arrays_with_biggus/thumb.png" class="rss-img" style="float: right;" alt="Thumbnail for massive_virtual_arrays_with_biggus"></a>
               </header>
               <div class="body">
-                I often deal with huge gridded datasets which either stretch or indeed are beyond the limits of my computer's memory. In the past I've implemented a couple of workarounds to help me handle this data to extract meaningful analyses from them. One of the most intuitive ways of reducing gridded datasets is through indexing/slicing and in this regard netcdf4-python's excellent ability to slice subsets of a larger NetCDF file is invaluable. The problem with the netcdf4-python implementation is that this capability is only available if you have NetCDF files, and doing any analysis on the data involves loading all of the data into memory in the form of a numpy array. That is where biggus steps in.
+                <p>
+                  I often deal with huge gridded datasets which either stretch or indeed are beyond the limits of my computer's memory. In the past I've implemented a couple of workarounds to help me handle this data to extract meaningful analyses from them. One of the most intuitive ways of reducing gridded datasets is through indexing/slicing and in this regard netcdf4-python's excellent ability to slice subsets of a larger NetCDF file is invaluable. The problem with the netcdf4-python implementation is that this capability is only available if you have NetCDF files, and doing any analysis on the data involves loading all of the data into memory in the form of a numpy array. That is where biggus steps in.
+                </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
                 <a href="https://pelson.github.io/2013/massive_virtual_arrays_with_biggus/" class="btn btn-info clearfix" role="button">Read on...</a>

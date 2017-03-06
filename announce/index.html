@@ -139,16 +139,20 @@
               </h3>
               <div style="float: left; padding: 0.5em 1em 0.5em 0em;">
                 <time datetime="2015-10-03T12:00:00+01:00" class="icon"></time>
-                <p class="year">
-                  <time datetime="2015-10-03T12:00:00+01:00" class="icon">2015</time>
-                </p>
-                <p class="month">
-                  <time datetime="2015-10-03T12:00:00+01:00" class="icon">October</time>
-                </p><time datetime="2015-10-03T12:00:00+01:00" class="icon"><span class="day">3</span></time>
+                <div class="time-icon">
+                  <p class="year">
+                    2015
+                  </p>
+                  <p class="month">
+                    October
+                  </p><span class="day">3</span>
+                </div>
               </div>
             </header>
             <div class="body">
-              Conda is awesome - it is a simple package manager which allows me to create isolated software environments much like virtualenv. Unlike virtualenv though it can handle any package type, not just python ones. The more I use it, the more I want to make use of conda's dependency tracking for my own simple scripts to ensure they were being executed in a suitable environment with the expected dependencies already installed. conda build is an excellent tool for building your own distributions and sharing them on anaconda.org, but creating a distribution is tiresome if all you have is a single script, rather than a fully-fledged software package. That is where conda execute comes in.
+              <p>
+                Conda is awesome - it is a simple package manager which allows me to create isolated software environments much like virtualenv. Unlike virtualenv though it can handle any package type, not just python ones. The more I use it, the more I want to make use of conda's dependency tracking for my own simple scripts to ensure they were being executed in a suitable environment with the expected dependencies already installed. conda build is an excellent tool for building your own distributions and sharing them on anaconda.org, but creating a distribution is tiresome if all you have is a single script, rather than a fully-fledged software package. That is where conda execute comes in.
+              </p>
             </div>
             <div style="float: right; padding: 2em; clear: right;">
               <a href="https://pelson.github.io/2015/conda_execute/" class="btn btn-info clearfix" role="button">Read on...</a>
