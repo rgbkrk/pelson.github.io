@@ -2,7 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
+    <loc>https://pelson.github.io/2017/heroku_fuse_mount/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://pelson.github.io/2015/conda_build_all/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pelson.github.io/2015/hints/vim_search_replace/</loc>
     <priority>0.8</priority>
   </url>
 

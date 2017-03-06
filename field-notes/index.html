@@ -9,7 +9,7 @@
     <meta name="author" content="Philip Elson">
     <link rel="icon" href="https://pelson.github.io/theme/images/favicon.ico">
     <title>
-      Articles tagged with "biggus" - Phil Elson - Software | Science | Python
+      Field notes | Phil Elson - Software | Science | Python
     </title><!-- Bootstrap core CSS -->
     <link href="https://pelson.github.io/theme/css/bootstrap.min.css" rel="stylesheet"><!-- Custom styles for this template -->
     <link href="https://pelson.github.io/theme/css/style.css" rel="stylesheet">
@@ -54,10 +54,7 @@
             <i class="fa fa-bars"></i>
           </div>
         </div>
-        <script>
-        var navbar_toggled = false;
-        </script>
-        <div class="actual-navbar shrink">
+        <div class="actual-navbar">
           <ul class="nav navbar-nav nav-pills">
             <li class="hidden-xs clearfix">
               <a href="https://pelson.github.io"><i class="fa fa-fw fa-home"></i>Home</a>
@@ -68,8 +65,8 @@
             <li class=" clearfix">
               <a href="https://pelson.github.io/announce/"><i class="fa fa-fw fa-bullhorn"></i>Announcements</a>
             </li>
-            <li class=" clearfix">
-              <a href="https://pelson.github.io/field-notes/"><i class="fa fa-fw fa-map-o"></i>&nbsp;Field notes</a>
+            <li class=" active clearfix">
+              <a href="https://pelson.github.io/field-notes/"><i class="fa fa-fw fa-map-o"></i>&nbsp;Field notes <span class="sr-only">(current)</span></a>
             </li>
             <li class=" clearfix">
               <a href="https://pelson.github.io/hints-n-tips/"><i class="fa fa-fw fa-list-ul"></i>Hints &amp; Tips</a>
@@ -78,18 +75,30 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-fw fa-clock-o"></i>Recent <span class="caret"></span></a>
               <ul class="dropdown-menu dropdown-menu-right">
                 <li>
-                  <a href="https://pelson.github.io/2013/massive_virtual_arrays_with_biggus/">Dealing with arrays which are bigger than memory - an intoduction to biggus</a>
+                  <a href="https://pelson.github.io/2017/heroku_fuse_mount/">Mounting a FUSE filesystem in Heroku</a>
+                </li>
+                <li>
+                  <a href="https://pelson.github.io/2015/conda_build_all/">Building a matrix of conda distributions with conda-build-all</a>
+                </li>
+                <li>
+                  <a href="https://pelson.github.io/2015/hints/vim_search_replace/">Vim search and replace across many files</a>
+                </li>
+                <li>
+                  <a href="https://pelson.github.io/2015/conda_execute/">Running scripts in temporary conda environments with conda execute</a>
+                </li>
+                <li>
+                  <a href="https://pelson.github.io/2014/nbagg_backend/">Interactive matplotlib figures in the IPython notebook - they've landed!</a>
                 </li>
                 <li class="nav-divider"></li>
                 <li>
-                  <a href="https://pelson.github.io/archives.html">See full archive (1)</a>
+                  <a href="https://pelson.github.io/archives.html">See full archive (8)</a>
                 </li>
               </ul>
             </li>
             <li class="hidden-xs dropdown clearfix">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-fw fa-tags"></i>Tags <span class="caret"></span></a>
               <ul class="dropdown-menu dropdown-menu-right">
-                <li class="active">
+                <li>
                   <a href="https://pelson.github.io/tag/biggus/">biggus (1)</a>
                 </li>
                 <li>
@@ -122,35 +131,30 @@
     </div><!-- Marketing messaging and featurettes -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
     <div class="container marketing">
-      <h2>
-        "biggus" was tagged in 1 articles:
-      </h2>
-      <div id="article">
-        <div class="row">
-          <div class="col-xs-12 col-md-12">
-            <article class=" blog-teaser">
-              <header>
-                <h3 style="min-height: 2em;">
-                  <a href="https://pelson.github.io/2013/massive_virtual_arrays_with_biggus/">Dealing with arrays which are bigger than memory - an intoduction to biggus</a> <i class="fa fa-fw fa-file-o" title="Articles"></i>
-                </h3>
-                <div style="float: left; padding: 0.5em 1em 0.5em 0em;">
-                  <time datetime="2013-09-25T12:00:00+01:00" class="icon"></time>
-                  <p class="year">
-                    <time datetime="2013-09-25T12:00:00+01:00" class="icon">2013</time>
-                  </p>
-                  <p class="month">
-                    <time datetime="2013-09-25T12:00:00+01:00" class="icon">September</time>
-                  </p><time datetime="2013-09-25T12:00:00+01:00" class="icon"><span class="day">25</span></time>
-                </div><a href="2013/massive_virtual_arrays_with_biggus/"><img src="https://pelson.github.io/images/massive_virtual_arrays_with_biggus/thumb.png" class="rss-img" style="float: right;" alt="Thumbnail for massive_virtual_arrays_with_biggus"></a>
-              </header>
-              <div class="body">
-                I often deal with huge gridded datasets which either stretch or indeed are beyond the limits of my computer's memory. In the past I've implemented a couple of workarounds to help me handle this data to extract meaningful analyses from them. One of the most intuitive ways of reducing gridded datasets is through indexing/slicing and in this regard netcdf4-python's excellent ability to slice subsets of a larger NetCDF file is invaluable. The problem with the netcdf4-python implementation is that this capability is only available if you have NetCDF files, and doing any analysis on the data involves loading all of the data into memory in the form of a numpy array. That is where biggus steps in.
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <article class=" blog-teaser">
+            <header>
+              <h3 style="min-height: 2em;">
+                <a href="https://pelson.github.io/2017/heroku_fuse_mount/">Mounting a FUSE filesystem in Heroku</a> <i class="fa fa-fw fa-map-o" title="Field notes"></i>
+              </h3>
+              <div style="float: left; padding: 0.5em 1em 0.5em 0em;">
+                <time datetime="2017-02-06T00:00:00+00:00" class="icon"></time>
+                <p class="year">
+                  <time datetime="2017-02-06T00:00:00+00:00" class="icon">2017</time>
+                </p>
+                <p class="month">
+                  <time datetime="2017-02-06T00:00:00+00:00" class="icon">February</time>
+                </p><time datetime="2017-02-06T00:00:00+00:00" class="icon"><span class="day">6</span></time>
               </div>
-              <div style="float: right; padding: 2em; clear: right;">
-                <a href="https://pelson.github.io/2013/massive_virtual_arrays_with_biggus/" class="btn btn-info clearfix" role="button">Read on...</a>
-              </div>
-            </article>
-          </div>
+            </header>
+            <div class="body">
+              This evening I'm going to take a different approach to how I would normaly blog. Rather than reporting the results of a technical investigation or highlighting a new/shiny package, I wanted to paint a realistic picture of the technical exploration process. As it happens, this particular investigation consumed a couple of hours and appears to have drawn an unsucessful result. Despite this, the learnings are invaluable as they will be directly and immediately applicable to other areas of my work.
+            </div>
+            <div style="float: right; padding: 2em; clear: right;">
+              <a href="https://pelson.github.io/2017/heroku_fuse_mount/" class="btn btn-info clearfix" role="button">Read on...</a>
+            </div>
+          </article>
         </div>
       </div><!-- /END THE FEATURETTES -->
       <div class="clearfix"></div>

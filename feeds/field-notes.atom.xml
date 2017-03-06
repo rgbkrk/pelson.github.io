@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Phil Elson - Software | Science | Python - field-notes</title><link href="https://pelson.github.io/" rel="alternate"></link><link href="https://pelson.github.io/feeds/field-notes.atom.xml" rel="self"></link><id>https://pelson.github.io/</id><updated>2017-02-06T00:00:00+00:00</updated><entry><title>Mounting a FUSE filesystem in Heroku</title><link href="https://pelson.github.io/2017/heroku_fuse_mount/" rel="alternate"></link><published>2017-02-06T00:00:00+00:00</published><updated>2017-02-06T00:00:00+00:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2017-02-06:2017/heroku_fuse_mount/</id><summary type="html">&lt;p&gt;This evening I'm going to take a different approach to how I would normaly blog.&lt;/p&gt;
+&lt;p&gt;Rather than reporting the results of a technical investigation or highlighting a new/shiny package, I wanted to
+paint a realistic picture of the technical exploration process.&lt;/p&gt;
+&lt;p&gt;As it happens, this particular investigation consumed a couple of hours and appears to have drawn an unsucessful
+result. Despite this, the learnings are invaluable as they will be directly and immediately applicable to other areas of my work.&lt;/p&gt;
+</summary><category term="Heroku"></category><category term="FUSE"></category><category term="python"></category><category term="docker"></category></entry></feed>
