@@ -1,36 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>Phil Elson - Software | Science | Python - Phil Elson</title><link>https://pelson.github.io/</link><description></description><lastBuildDate>Thu, 16 Mar 2017 00:00:00 +0000</lastBuildDate><item><title>Playing with Randall Munroe's XKCD handwriting</title><link>https://pelson.github.io/2017/xkcd_font/</link><description>&lt;p&gt;The XKCD font (as used by matplotlib et al.) recently &lt;a href="https://github.com/ipython/xkcd-font/pull/13"&gt;got an update&lt;/a&gt; to include lower-case characters.
 For some time now I have been aware of a handwriting sample produced by Randall Munroe (XKCD's creator) that I was interested in exploring.
-The ultimate aim is to automatically produce a font-file …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Thu, 16 Mar 2017 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:pelson.github.io,2017-03-16:/2017/xkcd_font/</guid><category>XKCD</category><category>fonts</category><category>Python</category></item><item><title>Mounting a FUSE filesystem in Heroku</title><link>https://pelson.github.io/2017/heroku_fuse_mount/</link><description>&lt;p&gt;This evening I'm going to take a different approach to how I would normaly blog.&lt;/p&gt;
+The ultimate aim is to automatically produce a font-file using open source tools, and to learn a few things along the way.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Thu, 16 Mar 2017 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:pelson.github.io,2017-03-16:2017/xkcd_font/</guid><category>XKCD</category><category>fonts</category><category>Python</category></item><item><title>Mounting a FUSE filesystem in Heroku</title><link>https://pelson.github.io/2017/heroku_fuse_mount/</link><description>&lt;p&gt;This evening I'm going to take a different approach to how I would normaly blog.&lt;/p&gt;
 &lt;p&gt;Rather than reporting the results of a technical investigation or highlighting a new/shiny package, I wanted to
 paint a realistic picture of the technical exploration process.&lt;/p&gt;
-&lt;p&gt;As it happens, this particular investigation consumed a …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Mon, 06 Feb 2017 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:pelson.github.io,2017-02-06:/2017/heroku_fuse_mount/</guid><category>Heroku</category><category>FUSE</category><category>python</category><category>docker</category></item><item><title>Building a matrix of conda distributions with conda-build-all</title><link>https://pelson.github.io/2015/conda_build_all/</link><description>&lt;p&gt;Introducing &lt;code&gt;conda-build-all&lt;/code&gt;, a tool which extends &lt;code&gt;conda-build&lt;/code&gt; to provide powerful build
+&lt;p&gt;As it happens, this particular investigation consumed a couple of hours and appears to have drawn an unsucessful
+result. Despite this, the learnings are invaluable as they will be directly and immediately applicable to other areas of my work.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Mon, 06 Feb 2017 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:pelson.github.io,2017-02-06:2017/heroku_fuse_mount/</guid><category>Heroku</category><category>FUSE</category><category>python</category><category>docker</category></item><item><title>Building a matrix of conda distributions with conda-build-all</title><link>https://pelson.github.io/2015/conda_build_all/</link><description>&lt;p&gt;Introducing &lt;code&gt;conda-build-all&lt;/code&gt;, a tool which extends &lt;code&gt;conda-build&lt;/code&gt; to provide powerful build
 matrix capabilities.&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-&lt;p&gt;Repositories such as &lt;a href="https://github.com/ioos/conda-recipes"&gt;conda-forge/stages-recipes&lt;/a&gt;, &lt;a href="https://github.com/SciTools/conda-recipes-scitools"&gt;SciTools/conda-recipes-scitools&lt;/a&gt; and &lt;a href="https://github.com/ioos/conda-recipes"&gt;ioos/conda-recipes&lt;/a&gt; exist to provide a set of conda recipes, and ultimately, channels from which users can access the product of &lt;code&gt;conda-build&lt;/code&gt;-ing those recipes.
-The build phase of …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Wed, 09 Dec 2015 12:00:00 +0000</pubDate><guid isPermaLink="false">tag:pelson.github.io,2015-12-09:/2015/conda_build_all/</guid><category>conda</category></item><item><title>Vim search and replace across many files</title><link>https://pelson.github.io/2015/hints/vim_search_replace/</link><description>&lt;p&gt;A powerful combination of commands for search and replace across multiple files with Vim.&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-&lt;p&gt;http://vim.wikia.com/wiki/Opening_multiple_files_from_a_single_command-line
-http://vim.wikia.com/wiki/Search_and_replace_in_multiple_buffers&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;:arg **/*.cpp
-
-:argdo %s/pattern/replace/ge | update   
-&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Thu, 03 Dec 2015 12:00:00 +0000</pubDate><guid isPermaLink="false">tag:pelson.github.io,2015-12-03:/2015/hints/vim_search_replace/</guid></item><item><title>Running scripts in temporary conda environments with conda execute</title><link>https://pelson.github.io/2015/conda_execute/</link><description>&lt;p&gt;Conda is awesome - it is a simple package manager which allows me to create isolated software environments
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Wed, 09 Dec 2015 12:00:00 +0000</pubDate><guid isPermaLink="false">tag:pelson.github.io,2015-12-09:2015/conda_build_all/</guid><category>conda</category></item><item><title>Vim search and replace across many files</title><link>https://pelson.github.io/2015/hints/vim_search_replace/</link><description>&lt;p&gt;A powerful combination of commands for search and replace across multiple files with Vim.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Thu, 03 Dec 2015 12:00:00 +0000</pubDate><guid isPermaLink="false">tag:pelson.github.io,2015-12-03:2015/hints/vim_search_replace/</guid></item><item><title>Running scripts in temporary conda environments with conda execute</title><link>https://pelson.github.io/2015/conda_execute/</link><description>&lt;p&gt;Conda is awesome - it is a simple package manager which allows me to create isolated software environments
 much like virtualenv. Unlike virtualenv though it can handle any package type, not just python ones.&lt;/p&gt;
-&lt;p&gt;The more I use it, the more I want to make use of conda's dependency tracking for …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Sat, 03 Oct 2015 12:00:00 +0100</pubDate><guid isPermaLink="false">tag:pelson.github.io,2015-10-03:/2015/conda_execute/</guid><category>Python</category><category>conda</category></item><item><title>Interactive matplotlib figures in the IPython notebook - they've landed!</title><link>https://pelson.github.io/2014/nbagg_backend/</link><description>&lt;p&gt;{% notebook nbagg_backend/nbagg_backend.ipynb cells[1:2] %}&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;p&gt;The more I use it, the more I want to make use of conda's dependency tracking for my own simple scripts to
+ensure they were being executed in a suitable environment with the expected dependencies already installed.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;conda build&lt;/code&gt; is an excellent tool for building your own distributions and sharing them on anaconda.org,
+but creating a distribution is tiresome if all you have is a single script, rather than a fully-fledged
+software package. That is where &lt;code&gt;conda execute&lt;/code&gt; comes in.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Sat, 03 Oct 2015 12:00:00 +0100</pubDate><guid isPermaLink="false">tag:pelson.github.io,2015-10-03:2015/conda_execute/</guid><category>Python</category><category>conda</category></item><item><title>Interactive matplotlib figures in the IPython notebook - they've landed!</title><link>https://pelson.github.io/2014/nbagg_backend/</link><description>&lt;p&gt;
 
-&lt;p&gt;{% notebook nbagg_backend/nbagg_backend.ipynb cells[2:] %}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Tue, 03 Jun 2014 12:00:00 +0100</pubDate><guid isPermaLink="false">tag:pelson.github.io,2014-06-03:/2014/nbagg_backend/</guid><category>matplotlib</category><category>Python</category></item><item><title>Dealing with arrays which are bigger than memory - an intoduction to biggus</title><link>https://pelson.github.io/2013/massive_virtual_arrays_with_biggus/</link><description>&lt;p&gt;{% notebook massive_virtual_arrays_with_biggus/massive_arrays_with_biggus.ipynb cells[:1] %}&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
 
-&lt;p&gt;{% notebook massive_virtual_arrays_with_biggus/massive_arrays_with_biggus.ipynb cells[1:] %}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Wed, 25 Sep 2013 12:00:00 +0100</pubDate><guid isPermaLink="false">tag:pelson.github.io,2013-09-25:/2013/massive_virtual_arrays_with_biggus/</guid><category>matplotlib</category><category>Python</category><category>biggus</category><category>voluminous data</category></item><item><title>Working with colours in matplotlib</title><link>https://pelson.github.io/2013/working_with_colors_in_matplotlib/</link><description>&lt;p&gt;When dealing with colours in scientific visualisations some people like to have a colourmap
+
+
+
+&lt;p&gt;After what feels like years chipping away at the problem, not least from some awesome developers including the whole of the IPython development team, Michael Droetboom and Jason Grout, I recently closed the development loop and added a new matplotlib backend providing interactive figures in the IPython notebook environment.&lt;/p&gt;
+
+
+
+
+ 
+
+&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Tue, 03 Jun 2014 12:00:00 +0100</pubDate><guid isPermaLink="false">tag:pelson.github.io,2014-06-03:2014/nbagg_backend/</guid><category>matplotlib</category><category>Python</category></item><item><title>Dealing with arrays which are bigger than memory - an intoduction to biggus</title><link>https://pelson.github.io/2013/massive_virtual_arrays_with_biggus/</link><description>&lt;p&gt;
+
+
+
+
+
+&lt;p&gt;I often deal with huge gridded datasets which either stretch or indeed are beyond the limits of my computer's memory. In the past I've implemented a couple of workarounds to help me handle this data to extract meaningful analyses from them. One of the most intuitive ways of reducing gridded datasets is through indexing/slicing and in this regard netcdf4-python's excellent ability to slice subsets of a larger NetCDF file is invaluable. The problem with the netcdf4-python implementation is that this capability is only available if you have NetCDF files, and doing any analysis on the data involves loading all of the data into memory in the form of a numpy array.&lt;/p&gt;
+&lt;p&gt;That is where &lt;a href="https://github.com/SciTools/biggus"&gt;biggus&lt;/a&gt; steps in.&lt;/p&gt;
+
+
+
+
+ 
+
+&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Wed, 25 Sep 2013 12:00:00 +0100</pubDate><guid isPermaLink="false">tag:pelson.github.io,2013-09-25:2013/massive_virtual_arrays_with_biggus/</guid><category>matplotlib</category><category>Python</category><category>biggus</category><category>voluminous data</category></item><item><title>Working with colours in matplotlib</title><link>https://pelson.github.io/2013/working_with_colors_in_matplotlib/</link><description>&lt;p&gt;When dealing with colours in scientific visualisations some people like to have a colourmap
 which can be indexed into to pick specific colours. Whilst this isn't necessarily the best
 way of handling colours in matplotlib, it certainly adds a degree of familiarity to users
-who have come over from other …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Mon, 03 Jun 2013 12:00:00 +0100</pubDate><guid isPermaLink="false">tag:pelson.github.io,2013-06-03:/2013/working_with_colors_in_matplotlib/</guid><category>matplotlib</category><category>Python</category></item><item><title>Drawing a pseudo-colour blockplot (pcolormesh) in matplotlib with levels and specific colours</title><link>https://pelson.github.io/2013/from_levels_and_colors/</link><description>&lt;p&gt;I recently added a new function to matplotlib to make it easier to draw pseudo-colour
+who have come over from other visualisation tools, such as IDL.&lt;/p&gt;
+&lt;p&gt;In this article I'll cover one approach to using the colour-by-index paradigm in matplotlib.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Mon, 03 Jun 2013 12:00:00 +0100</pubDate><guid isPermaLink="false">tag:pelson.github.io,2013-06-03:2013/working_with_colors_in_matplotlib/</guid><category>matplotlib</category><category>Python</category></item><item><title>Drawing a pseudo-colour blockplot (pcolormesh) in matplotlib with levels and specific colours</title><link>https://pelson.github.io/2013/from_levels_and_colors/</link><description>&lt;p&gt;I recently added a new function to matplotlib to make it easier to draw pseudo-colour
 plots given specific levels and colours, in exactly the same way as you can with contour
 and contourf.&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-&lt;p&gt;{% notebook from_levels_and_colors/using.ipynb cells[1:] %}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Fri, 03 May 2013 12:00:00 +0100</pubDate><guid isPermaLink="false">tag:pelson.github.io,2013-05-03:/2013/from_levels_and_colors/</guid><category>matplotlib</category><category>Python</category></item></channel></rss>
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Phil Elson</dc:creator><pubDate>Fri, 03 May 2013 12:00:00 +0100</pubDate><guid isPermaLink="false">tag:pelson.github.io,2013-05-03:2013/from_levels_and_colors/</guid><category>matplotlib</category><category>Python</category></item></channel></rss>

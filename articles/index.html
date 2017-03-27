@@ -157,7 +157,7 @@
             </header>
             <div class="body">
               <p>
-                Introducing conda-build-all, a tool which extends conda-build to provide powerful build matrix capabilities. Repositories such as conda-forge/stages-recipes, SciTools/conda-recipes-scitools and ioos/conda-recipes exist to provide a set of conda recipes, and ultimately, channels from which users can access the product of conda-build-ing those recipes. The build phase of …
+                Introducing conda-build-all, a tool which extends conda-build to provide powerful build matrix capabilities.
               </p>
             </div>
             <div style="float: right; padding: 2em; clear: right;">
@@ -185,7 +185,7 @@
             </header>
             <div class="body">
               <p>
-                {% notebook nbagg_backend/nbagg_backend.ipynb cells[1:2] %} {% notebook nbagg_backend/nbagg_backend.ipynb cells[2:] %}
+                After what feels like years chipping away at the problem, not least from some awesome developers including the whole of the IPython development team, Michael Droetboom and Jason Grout, I recently closed the development loop and added a new matplotlib backend providing interactive figures in the IPython notebook environment.
               </p>
             </div>
             <div style="float: right; padding: 2em; clear: right;">
@@ -214,7 +214,7 @@
             </header>
             <div class="body">
               <p>
-                {% notebook massive_virtual_arrays_with_biggus/massive_arrays_with_biggus.ipynb cells[:1] %} {% notebook massive_virtual_arrays_with_biggus/massive_arrays_with_biggus.ipynb cells[1:] %}
+                I often deal with huge gridded datasets which either stretch or indeed are beyond the limits of my computer's memory. In the past I've implemented a couple of workarounds to help me handle this data to extract meaningful analyses from them. One of the most intuitive ways of reducing gridded datasets is through indexing/slicing and in this regard netcdf4-python's excellent ability to slice subsets of a larger NetCDF file is invaluable. The problem with the netcdf4-python implementation is that this capability is only available if you have NetCDF files, and doing any analysis on the data involves loading all of the data into memory in the form of a numpy array. That is where biggus steps in.
               </p>
             </div>
             <div style="float: right; padding: 2em; clear: right;">

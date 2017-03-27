@@ -164,7 +164,7 @@
               </header>
               <div class="body">
                 <p>
-                  The XKCD font (as used by matplotlib et al.) recently got an update to include lower-case characters. For some time now I have been aware of a handwriting sample produced by Randall Munroe (XKCD's creator) that I was interested in exploring. The ultimate aim is to automatically produce a font-file …
+                  The XKCD font (as used by matplotlib et al.) recently got an update to include lower-case characters. For some time now I have been aware of a handwriting sample produced by Randall Munroe (XKCD's creator) that I was interested in exploring. The ultimate aim is to automatically produce a font-file using open source tools, and to learn a few things along the way.
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
@@ -192,7 +192,7 @@
               </header>
               <div class="body">
                 <p>
-                  This evening I'm going to take a different approach to how I would normaly blog. Rather than reporting the results of a technical investigation or highlighting a new/shiny package, I wanted to paint a realistic picture of the technical exploration process. As it happens, this particular investigation consumed a …
+                  This evening I'm going to take a different approach to how I would normaly blog. Rather than reporting the results of a technical investigation or highlighting a new/shiny package, I wanted to paint a realistic picture of the technical exploration process. As it happens, this particular investigation consumed a couple of hours and appears to have drawn an unsucessful result. Despite this, the learnings are invaluable as they will be directly and immediately applicable to other areas of my work.
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
@@ -221,7 +221,7 @@
               </header>
               <div class="body">
                 <p>
-                  Conda is awesome - it is a simple package manager which allows me to create isolated software environments much like virtualenv. Unlike virtualenv though it can handle any package type, not just python ones. The more I use it, the more I want to make use of conda's dependency tracking for …
+                  Conda is awesome - it is a simple package manager which allows me to create isolated software environments much like virtualenv. Unlike virtualenv though it can handle any package type, not just python ones. The more I use it, the more I want to make use of conda's dependency tracking for my own simple scripts to ensure they were being executed in a suitable environment with the expected dependencies already installed. conda build is an excellent tool for building your own distributions and sharing them on anaconda.org, but creating a distribution is tiresome if all you have is a single script, rather than a fully-fledged software package. That is where conda execute comes in.
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
@@ -249,7 +249,7 @@
               </header>
               <div class="body">
                 <p>
-                  {% notebook nbagg_backend/nbagg_backend.ipynb cells[1:2] %} {% notebook nbagg_backend/nbagg_backend.ipynb cells[2:] %}
+                  After what feels like years chipping away at the problem, not least from some awesome developers including the whole of the IPython development team, Michael Droetboom and Jason Grout, I recently closed the development loop and added a new matplotlib backend providing interactive figures in the IPython notebook environment.
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
@@ -278,7 +278,7 @@
               </header>
               <div class="body">
                 <p>
-                  {% notebook massive_virtual_arrays_with_biggus/massive_arrays_with_biggus.ipynb cells[:1] %} {% notebook massive_virtual_arrays_with_biggus/massive_arrays_with_biggus.ipynb cells[1:] %}
+                  I often deal with huge gridded datasets which either stretch or indeed are beyond the limits of my computer's memory. In the past I've implemented a couple of workarounds to help me handle this data to extract meaningful analyses from them. One of the most intuitive ways of reducing gridded datasets is through indexing/slicing and in this regard netcdf4-python's excellent ability to slice subsets of a larger NetCDF file is invaluable. The problem with the netcdf4-python implementation is that this capability is only available if you have NetCDF files, and doing any analysis on the data involves loading all of the data into memory in the form of a numpy array. That is where biggus steps in.
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
@@ -306,7 +306,7 @@
               </header>
               <div class="body">
                 <p>
-                  When dealing with colours in scientific visualisations some people like to have a colourmap which can be indexed into to pick specific colours. Whilst this isn't necessarily the best way of handling colours in matplotlib, it certainly adds a degree of familiarity to users who have come over from other …
+                  When dealing with colours in scientific visualisations some people like to have a colourmap which can be indexed into to pick specific colours. Whilst this isn't necessarily the best way of handling colours in matplotlib, it certainly adds a degree of familiarity to users who have come over from other visualisation tools, such as IDL. In this article I'll cover one approach to using the colour-by-index paradigm in matplotlib.
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
@@ -335,7 +335,7 @@
               </header>
               <div class="body">
                 <p>
-                  I recently added a new function to matplotlib to make it easier to draw pseudo-colour plots given specific levels and colours, in exactly the same way as you can with contour and contourf. {% notebook from_levels_and_colors/using.ipynb cells[1:] %}
+                  I recently added a new function to matplotlib to make it easier to draw pseudo-colour plots given specific levels and colours, in exactly the same way as you can with contour and contourf.
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
