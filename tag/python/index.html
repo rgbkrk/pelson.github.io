@@ -9,7 +9,7 @@
     <meta name="author" content="Philip Elson">
     <link rel="icon" href="https://pelson.github.io/theme/images/favicon.ico">
     <title>
-      Articles tagged with "python" - Phil Elson - Software | Science | Python
+      Articles tagged with "Python" - Phil Elson - Software | Science | Python
     </title><!-- Bootstrap core CSS -->
     <link href="https://pelson.github.io/theme/bootstrap/css/bootstrap.min.css" rel="stylesheet"><!-- Custom styles for this template -->
     <link href="https://pelson.github.io/theme/css/style.css" rel="stylesheet">
@@ -78,6 +78,9 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-fw fa-clock-o"></i>Recent <span class="caret"></span></a>
               <ul class="dropdown-menu dropdown-menu-right">
                 <li>
+                  <a href="https://pelson.github.io/2017/xkcd_font/">Playing with Randall Munroe's XKCD handwriting</a>
+                </li>
+                <li>
                   <a href="https://pelson.github.io/2017/heroku_fuse_mount/">Mounting a FUSE filesystem in Heroku</a>
                 </li>
                 <li>
@@ -89,12 +92,9 @@
                 <li>
                   <a href="https://pelson.github.io/2013/massive_virtual_arrays_with_biggus/">Dealing with arrays which are bigger than memory - an intoduction to biggus</a>
                 </li>
-                <li>
-                  <a href="https://pelson.github.io/2013/working_with_colors_in_matplotlib/">Working with colours in matplotlib</a>
-                </li>
                 <li class="nav-divider"></li>
                 <li>
-                  <a href="https://pelson.github.io/archives.html">See full archive (6)</a>
+                  <a href="https://pelson.github.io/archives.html">See full archive (7)</a>
                 </li>
               </ul>
             </li>
@@ -111,6 +111,9 @@
                   <a href="https://pelson.github.io/tag/docker/">docker (1)</a>
                 </li>
                 <li>
+                  <a href="https://pelson.github.io/tag/fonts/">fonts (1)</a>
+                </li>
+                <li>
                   <a href="https://pelson.github.io/tag/fuse/">FUSE (1)</a>
                 </li>
                 <li>
@@ -120,10 +123,13 @@
                   <a href="https://pelson.github.io/tag/matplotlib/">matplotlib (4)</a>
                 </li>
                 <li class="active">
-                  <a href="https://pelson.github.io/tag/python/">python (6)</a>
+                  <a href="https://pelson.github.io/tag/python/">Python (7)</a>
                 </li>
                 <li>
                   <a href="https://pelson.github.io/tag/voluminous-data/">voluminous data (1)</a>
+                </li>
+                <li>
+                  <a href="https://pelson.github.io/tag/xkcd/">XKCD (1)</a>
                 </li>
               </ul>
             </li>
@@ -134,10 +140,38 @@
     </div>
     <div class="container">
       <h2>
-        "python" was tagged in 6 articles:
+        "Python" was tagged in 7 articles:
       </h2>
       <div id="article">
         <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <article class=" blog-teaser">
+              <header>
+                <h3 style="min-height: 2em;">
+                  <a href="https://pelson.github.io/2017/xkcd_font/">Playing with Randall Munroe's XKCD handwriting</a> <i class="fa fa-fw fa-map-o" title="Field notes"></i>
+                </h3>
+                <div style="float: left; padding: 0.5em 1em 0.5em 0em;">
+                  <time datetime="2017-03-16T00:00:00+00:00" class="icon"></time>
+                  <div class="time-icon">
+                    <p class="year">
+                      2017
+                    </p>
+                    <p class="month">
+                      March
+                    </p><span class="day">16</span>
+                  </div>
+                </div>
+              </header>
+              <div class="body">
+                <p>
+                  The XKCD font (as used by matplotlib et al.) recently got an update to include lower-case characters. For some time now I have been aware of a handwriting sample produced by Randall Munroe (XKCD's creator) that I was interested in exploring. The ultimate aim is to automatically produce a font-file …
+                </p>
+              </div>
+              <div style="float: right; padding: 2em; clear: right;">
+                <a href="https://pelson.github.io/2017/xkcd_font/" class="btn btn-info clearfix" role="button">Read on...</a>
+              </div>
+            </article>
+          </div>
           <div class="col-xs-12 col-md-6">
             <article class=" blog-teaser">
               <header>
@@ -158,7 +192,7 @@
               </header>
               <div class="body">
                 <p>
-                  This evening I'm going to take a different approach to how I would normaly blog. Rather than reporting the results of a technical investigation or highlighting a new/shiny package, I wanted to paint a realistic picture of the technical exploration process. As it happens, this particular investigation consumed a couple of hours and appears to have drawn an unsucessful result. Despite this, the learnings are invaluable as they will be directly and immediately applicable to other areas of my work.
+                  This evening I'm going to take a different approach to how I would normaly blog. Rather than reporting the results of a technical investigation or highlighting a new/shiny package, I wanted to paint a realistic picture of the technical exploration process. As it happens, this particular investigation consumed a …
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
@@ -166,6 +200,7 @@
               </div>
             </article>
           </div>
+          <div class="clearfix"></div>
           <div class="col-xs-12 col-md-6">
             <article class=" blog-teaser">
               <header>
@@ -186,7 +221,7 @@
               </header>
               <div class="body">
                 <p>
-                  Conda is awesome - it is a simple package manager which allows me to create isolated software environments much like virtualenv. Unlike virtualenv though it can handle any package type, not just python ones. The more I use it, the more I want to make use of conda's dependency tracking for my own simple scripts to ensure they were being executed in a suitable environment with the expected dependencies already installed. conda build is an excellent tool for building your own distributions and sharing them on anaconda.org, but creating a distribution is tiresome if all you have is a single script, rather than a fully-fledged software package. That is where conda execute comes in.
+                  Conda is awesome - it is a simple package manager which allows me to create isolated software environments much like virtualenv. Unlike virtualenv though it can handle any package type, not just python ones. The more I use it, the more I want to make use of conda's dependency tracking for …
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
@@ -194,7 +229,6 @@
               </div>
             </article>
           </div>
-          <div class="clearfix"></div>
           <div class="col-xs-12 col-md-6">
             <article class=" blog-teaser">
               <header>
@@ -215,7 +249,7 @@
               </header>
               <div class="body">
                 <p>
-                  After what feels like years chipping away at the problem, not least from some awesome developers including the whole of the IPython development team, Michael Droetboom and Jason Grout, I recently closed the development loop and added a new matplotlib backend providing interactive figures in the IPython notebook environment.
+                  {% notebook nbagg_backend/nbagg_backend.ipynb cells[1:2] %} {% notebook nbagg_backend/nbagg_backend.ipynb cells[2:] %}
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
@@ -223,6 +257,7 @@
               </div>
             </article>
           </div>
+          <div class="clearfix"></div>
           <div class="col-xs-12 col-md-6">
             <article class=" blog-teaser">
               <header>
@@ -243,7 +278,7 @@
               </header>
               <div class="body">
                 <p>
-                  I often deal with huge gridded datasets which either stretch or indeed are beyond the limits of my computer's memory. In the past I've implemented a couple of workarounds to help me handle this data to extract meaningful analyses from them. One of the most intuitive ways of reducing gridded datasets is through indexing/slicing and in this regard netcdf4-python's excellent ability to slice subsets of a larger NetCDF file is invaluable. The problem with the netcdf4-python implementation is that this capability is only available if you have NetCDF files, and doing any analysis on the data involves loading all of the data into memory in the form of a numpy array. That is where biggus steps in.
+                  {% notebook massive_virtual_arrays_with_biggus/massive_arrays_with_biggus.ipynb cells[:1] %} {% notebook massive_virtual_arrays_with_biggus/massive_arrays_with_biggus.ipynb cells[1:] %}
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
@@ -251,7 +286,6 @@
               </div>
             </article>
           </div>
-          <div class="clearfix"></div>
           <div class="col-xs-12 col-md-6">
             <article class=" blog-teaser">
               <header>
@@ -272,7 +306,7 @@
               </header>
               <div class="body">
                 <p>
-                  When dealing with colours in scientific visualisations some people like to have a colourmap which can be indexed into to pick specific colours. Whilst this isn't necessarily the best way of handling colours in matplotlib, it certainly adds a degree of familiarity to users who have come over from other visualisation tools, such as IDL. In this article I'll cover one approach to using the colour-by-index paradigm in matplotlib.
+                  When dealing with colours in scientific visualisations some people like to have a colourmap which can be indexed into to pick specific colours. Whilst this isn't necessarily the best way of handling colours in matplotlib, it certainly adds a degree of familiarity to users who have come over from other …
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
@@ -280,6 +314,7 @@
               </div>
             </article>
           </div>
+          <div class="clearfix"></div>
           <div class="col-xs-12 col-md-6">
             <article class=" blog-teaser">
               <header>
@@ -300,7 +335,7 @@
               </header>
               <div class="body">
                 <p>
-                  I recently added a new function to matplotlib to make it easier to draw pseudo-colour plots given specific levels and colours, in exactly the same way as you can with contour and contourf.
+                  I recently added a new function to matplotlib to make it easier to draw pseudo-colour plots given specific levels and colours, in exactly the same way as you can with contour and contourf. {% notebook from_levels_and_colors/using.ipynb cells[1:] %}
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
@@ -308,7 +343,6 @@
               </div>
             </article>
           </div>
-          <div class="clearfix"></div>
         </div>
       </div><!-- /END THE FEATURETTES -->
       <div class="clearfix"></div>

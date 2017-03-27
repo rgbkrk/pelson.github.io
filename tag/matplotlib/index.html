@@ -108,6 +108,9 @@
                   <a href="https://pelson.github.io/tag/docker/">docker (1)</a>
                 </li>
                 <li>
+                  <a href="https://pelson.github.io/tag/fonts/">fonts (1)</a>
+                </li>
+                <li>
                   <a href="https://pelson.github.io/tag/fuse/">FUSE (1)</a>
                 </li>
                 <li>
@@ -117,10 +120,13 @@
                   <a href="https://pelson.github.io/tag/matplotlib/">matplotlib (4)</a>
                 </li>
                 <li>
-                  <a href="https://pelson.github.io/tag/python/">python (6)</a>
+                  <a href="https://pelson.github.io/tag/python/">Python (7)</a>
                 </li>
                 <li>
                   <a href="https://pelson.github.io/tag/voluminous-data/">voluminous data (1)</a>
+                </li>
+                <li>
+                  <a href="https://pelson.github.io/tag/xkcd/">XKCD (1)</a>
                 </li>
               </ul>
             </li>
@@ -155,7 +161,7 @@
               </header>
               <div class="body">
                 <p>
-                  After what feels like years chipping away at the problem, not least from some awesome developers including the whole of the IPython development team, Michael Droetboom and Jason Grout, I recently closed the development loop and added a new matplotlib backend providing interactive figures in the IPython notebook environment.
+                  {% notebook nbagg_backend/nbagg_backend.ipynb cells[1:2] %} {% notebook nbagg_backend/nbagg_backend.ipynb cells[2:] %}
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
@@ -183,7 +189,7 @@
               </header>
               <div class="body">
                 <p>
-                  I often deal with huge gridded datasets which either stretch or indeed are beyond the limits of my computer's memory. In the past I've implemented a couple of workarounds to help me handle this data to extract meaningful analyses from them. One of the most intuitive ways of reducing gridded datasets is through indexing/slicing and in this regard netcdf4-python's excellent ability to slice subsets of a larger NetCDF file is invaluable. The problem with the netcdf4-python implementation is that this capability is only available if you have NetCDF files, and doing any analysis on the data involves loading all of the data into memory in the form of a numpy array. That is where biggus steps in.
+                  {% notebook massive_virtual_arrays_with_biggus/massive_arrays_with_biggus.ipynb cells[:1] %} {% notebook massive_virtual_arrays_with_biggus/massive_arrays_with_biggus.ipynb cells[1:] %}
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
@@ -212,7 +218,7 @@
               </header>
               <div class="body">
                 <p>
-                  When dealing with colours in scientific visualisations some people like to have a colourmap which can be indexed into to pick specific colours. Whilst this isn't necessarily the best way of handling colours in matplotlib, it certainly adds a degree of familiarity to users who have come over from other visualisation tools, such as IDL. In this article I'll cover one approach to using the colour-by-index paradigm in matplotlib.
+                  When dealing with colours in scientific visualisations some people like to have a colourmap which can be indexed into to pick specific colours. Whilst this isn't necessarily the best way of handling colours in matplotlib, it certainly adds a degree of familiarity to users who have come over from other …
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">
@@ -240,7 +246,7 @@
               </header>
               <div class="body">
                 <p>
-                  I recently added a new function to matplotlib to make it easier to draw pseudo-colour plots given specific levels and colours, in exactly the same way as you can with contour and contourf.
+                  I recently added a new function to matplotlib to make it easier to draw pseudo-colour plots given specific levels and colours, in exactly the same way as you can with contour and contourf. {% notebook from_levels_and_colors/using.ipynb cells[1:] %}
                 </p>
               </div>
               <div style="float: right; padding: 2em; clear: right;">

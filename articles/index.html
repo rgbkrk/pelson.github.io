@@ -75,6 +75,9 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-fw fa-clock-o"></i>Recent <span class="caret"></span></a>
               <ul class="dropdown-menu dropdown-menu-right">
                 <li>
+                  <a href="https://pelson.github.io/2017/xkcd_font/">Playing with Randall Munroe's XKCD handwriting</a>
+                </li>
+                <li>
                   <a href="https://pelson.github.io/2017/heroku_fuse_mount/">Mounting a FUSE filesystem in Heroku</a>
                 </li>
                 <li>
@@ -86,12 +89,9 @@
                 <li>
                   <a href="https://pelson.github.io/2015/conda_execute/">Running scripts in temporary conda environments with conda execute</a>
                 </li>
-                <li>
-                  <a href="https://pelson.github.io/2014/nbagg_backend/">Interactive matplotlib figures in the IPython notebook - they've landed!</a>
-                </li>
                 <li class="nav-divider"></li>
                 <li>
-                  <a href="https://pelson.github.io/archives.html">See full archive (8)</a>
+                  <a href="https://pelson.github.io/archives.html">See full archive (9)</a>
                 </li>
               </ul>
             </li>
@@ -108,6 +108,9 @@
                   <a href="https://pelson.github.io/tag/docker/">docker (1)</a>
                 </li>
                 <li>
+                  <a href="https://pelson.github.io/tag/fonts/">fonts (1)</a>
+                </li>
+                <li>
                   <a href="https://pelson.github.io/tag/fuse/">FUSE (1)</a>
                 </li>
                 <li>
@@ -117,10 +120,13 @@
                   <a href="https://pelson.github.io/tag/matplotlib/">matplotlib (4)</a>
                 </li>
                 <li>
-                  <a href="https://pelson.github.io/tag/python/">python (6)</a>
+                  <a href="https://pelson.github.io/tag/python/">Python (7)</a>
                 </li>
                 <li>
                   <a href="https://pelson.github.io/tag/voluminous-data/">voluminous data (1)</a>
+                </li>
+                <li>
+                  <a href="https://pelson.github.io/tag/xkcd/">XKCD (1)</a>
                 </li>
               </ul>
             </li>
@@ -151,7 +157,7 @@
             </header>
             <div class="body">
               <p>
-                Introducing conda-build-all, a tool which extends conda-build to provide powerful build matrix capabilities.
+                Introducing conda-build-all, a tool which extends conda-build to provide powerful build matrix capabilities. Repositories such as conda-forge/stages-recipes, SciTools/conda-recipes-scitools and ioos/conda-recipes exist to provide a set of conda recipes, and ultimately, channels from which users can access the product of conda-build-ing those recipes. The build phase of …
               </p>
             </div>
             <div style="float: right; padding: 2em; clear: right;">
@@ -179,7 +185,7 @@
             </header>
             <div class="body">
               <p>
-                After what feels like years chipping away at the problem, not least from some awesome developers including the whole of the IPython development team, Michael Droetboom and Jason Grout, I recently closed the development loop and added a new matplotlib backend providing interactive figures in the IPython notebook environment.
+                {% notebook nbagg_backend/nbagg_backend.ipynb cells[1:2] %} {% notebook nbagg_backend/nbagg_backend.ipynb cells[2:] %}
               </p>
             </div>
             <div style="float: right; padding: 2em; clear: right;">
@@ -208,7 +214,7 @@
             </header>
             <div class="body">
               <p>
-                I often deal with huge gridded datasets which either stretch or indeed are beyond the limits of my computer's memory. In the past I've implemented a couple of workarounds to help me handle this data to extract meaningful analyses from them. One of the most intuitive ways of reducing gridded datasets is through indexing/slicing and in this regard netcdf4-python's excellent ability to slice subsets of a larger NetCDF file is invaluable. The problem with the netcdf4-python implementation is that this capability is only available if you have NetCDF files, and doing any analysis on the data involves loading all of the data into memory in the form of a numpy array. That is where biggus steps in.
+                {% notebook massive_virtual_arrays_with_biggus/massive_arrays_with_biggus.ipynb cells[:1] %} {% notebook massive_virtual_arrays_with_biggus/massive_arrays_with_biggus.ipynb cells[1:] %}
               </p>
             </div>
             <div style="float: right; padding: 2em; clear: right;">

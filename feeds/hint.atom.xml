@@ -1,3 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Phil Elson - Software | Science | Python - hint</title><link href="https://pelson.github.io/" rel="alternate"></link><link href="https://pelson.github.io/feeds/hint.atom.xml" rel="self"></link><id>https://pelson.github.io/</id><updated>2015-12-03T12:00:00+00:00</updated><entry><title>Vim search and replace across many files</title><link href="https://pelson.github.io/2015/hints/vim_search_replace/" rel="alternate"></link><published>2015-12-03T12:00:00+00:00</published><updated>2015-12-03T12:00:00+00:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2015-12-03:2015/hints/vim_search_replace/</id><summary type="html">&lt;p&gt;A powerful combination of commands for search and replace across multiple files with Vim.&lt;/p&gt;
-</summary></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Phil Elson - Software | Science | Python - hint</title><link href="https://pelson.github.io/" rel="alternate"></link><link href="https://pelson.github.io/feeds/hint.atom.xml" rel="self"></link><id>https://pelson.github.io/</id><updated>2015-12-03T12:00:00+00:00</updated><entry><title>Vim search and replace across many files</title><link href="https://pelson.github.io/2015/hints/vim_search_replace/" rel="alternate"></link><published>2015-12-03T12:00:00+00:00</published><updated>2015-12-03T12:00:00+00:00</updated><author><name>Phil Elson</name></author><id>tag:pelson.github.io,2015-12-03:/2015/hints/vim_search_replace/</id><summary type="html">&lt;p&gt;A powerful combination of commands for search and replace across multiple files with Vim.&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;http://vim.wikia.com/wiki/Opening_multiple_files_from_a_single_command-line
+http://vim.wikia.com/wiki/Search_and_replace_in_multiple_buffers&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;:arg **/*.cpp
+
+:argdo %s/pattern/replace/ge | update   
+&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;A powerful combination of commands for search and replace across multiple files with Vim.&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;http://vim.wikia.com/wiki/Opening_multiple_files_from_a_single_command-line
+http://vim.wikia.com/wiki/Search_and_replace_in_multiple_buffers&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;:arg **/*.cpp
+
+:argdo %s/pattern/replace/ge | update   
+&lt;/pre&gt;&lt;/div&gt;</content></entry></feed>

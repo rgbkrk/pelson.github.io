@@ -78,6 +78,9 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-fw fa-clock-o"></i>Recent <span class="caret"></span></a>
               <ul class="dropdown-menu dropdown-menu-right">
                 <li>
+                  <a href="https://pelson.github.io/2017/xkcd_font/">Playing with Randall Munroe's XKCD handwriting</a>
+                </li>
+                <li>
                   <a href="https://pelson.github.io/2017/heroku_fuse_mount/">Mounting a FUSE filesystem in Heroku</a>
                 </li>
                 <li>
@@ -89,12 +92,9 @@
                 <li>
                   <a href="https://pelson.github.io/2015/conda_execute/">Running scripts in temporary conda environments with conda execute</a>
                 </li>
-                <li>
-                  <a href="https://pelson.github.io/2014/nbagg_backend/">Interactive matplotlib figures in the IPython notebook - they've landed!</a>
-                </li>
                 <li class="nav-divider"></li>
                 <li>
-                  <a href="https://pelson.github.io/archives.html">See full archive (8)</a>
+                  <a href="https://pelson.github.io/archives.html">See full archive (9)</a>
                 </li>
               </ul>
             </li>
@@ -111,6 +111,9 @@
                   <a href="https://pelson.github.io/tag/docker/">docker (1)</a>
                 </li>
                 <li>
+                  <a href="https://pelson.github.io/tag/fonts/">fonts (1)</a>
+                </li>
+                <li>
                   <a href="https://pelson.github.io/tag/fuse/">FUSE (1)</a>
                 </li>
                 <li>
@@ -120,10 +123,13 @@
                   <a href="https://pelson.github.io/tag/matplotlib/">matplotlib (4)</a>
                 </li>
                 <li>
-                  <a href="https://pelson.github.io/tag/python/">python (6)</a>
+                  <a href="https://pelson.github.io/tag/python/">Python (7)</a>
                 </li>
                 <li>
                   <a href="https://pelson.github.io/tag/voluminous-data/">voluminous data (1)</a>
+                </li>
+                <li>
+                  <a href="https://pelson.github.io/tag/xkcd/">XKCD (1)</a>
                 </li>
               </ul>
             </li>
@@ -155,7 +161,7 @@
       <div class="entry">
         <p>
           Introducing <code>conda-build-all</code>, a tool which extends <code>conda-build</code> to provide powerful build matrix capabilities.
-        </p>
+        </p><!-- PELICAN_END_SUMMARY -->
         <p>
           Repositories such as <a href="https://github.com/ioos/conda-recipes">conda-forge/stages-recipes</a>, <a href="https://github.com/SciTools/conda-recipes-scitools">SciTools/conda-recipes-scitools</a> and <a href="https://github.com/ioos/conda-recipes">ioos/conda-recipes</a> exist to provide a set of conda recipes, and ultimately, channels from which users can access the product of <code>conda-build</code>-ing those recipes. The build phase of all of these repositories looks very similar: a tool (ObviousCI) computes the build matrix, builds those distributions which haven't already been built, and then uploads them to their respective channels. The functionality is tried and tested, and has been powering these repositories for over a year with huge success, however, I recently had need to use this functionality without wanting to upload the built distributions to <a href="http://conda.anaconda.org">conda.anaconda.org</a> and found the tool didn't <em>quite</em> fit the bill. Additionally, having originally cobbled together ObviousCI with string and sticky-tape to prove the concept of a continuously integrated repo of recipes, I didn't have huge confidence in its ability to function between python/conda/conda-build upgrades.
         </p>
