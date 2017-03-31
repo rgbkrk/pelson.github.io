@@ -78,11 +78,17 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-fw fa-clock-o"></i>Recent <span class="caret"></span></a>
               <ul class="dropdown-menu dropdown-menu-right">
                 <li>
+                  <a href="https://pelson.github.io/2017/xkcd_font_classifying_strokes/">Classifying segmented strokes as characters - Part 3 of an XKCD font saga</a>
+                </li>
+                <li>
+                  <a href="https://pelson.github.io/2017/xkcd_font_merge_then_extract_glyphs/">Segment, extract, and combine features of an image with SciPy and scikit-image - Part 2 of an XKCD font saga</a>
+                </li>
+                <li>
                   <a href="https://pelson.github.io/2017/xkcd_font/">Playing with Randall Munroe's XKCD handwriting</a>
                 </li>
                 <li class="nav-divider"></li>
                 <li>
-                  <a href="https://pelson.github.io/archives.html">See full archive (1)</a>
+                  <a href="https://pelson.github.io/archives.html">See full archive (3)</a>
                 </li>
               </ul>
             </li>
@@ -99,7 +105,7 @@
                   <a href="https://pelson.github.io/tag/docker/">docker (1)</a>
                 </li>
                 <li class="active">
-                  <a href="https://pelson.github.io/tag/fonts/">fonts (1)</a>
+                  <a href="https://pelson.github.io/tag/fonts/">fonts (3)</a>
                 </li>
                 <li>
                   <a href="https://pelson.github.io/tag/fuse/">FUSE (1)</a>
@@ -111,13 +117,13 @@
                   <a href="https://pelson.github.io/tag/matplotlib/">matplotlib (4)</a>
                 </li>
                 <li>
-                  <a href="https://pelson.github.io/tag/python/">Python (7)</a>
+                  <a href="https://pelson.github.io/tag/python/">Python (9)</a>
                 </li>
                 <li>
                   <a href="https://pelson.github.io/tag/voluminous-data/">voluminous data (1)</a>
                 </li>
                 <li>
-                  <a href="https://pelson.github.io/tag/xkcd/">XKCD (1)</a>
+                  <a href="https://pelson.github.io/tag/xkcd/">XKCD (3)</a>
                 </li>
               </ul>
             </li>
@@ -128,11 +134,68 @@
     </div>
     <div class="container">
       <h2>
-        "fonts" was tagged in 1 articles:
+        "fonts" was tagged in 3 articles:
       </h2>
       <div id="article">
         <div class="row">
-          <div class="col-xs-12 col-md-12">
+          <div class="col-xs-12 col-md-6">
+            <article class=" blog-teaser">
+              <header>
+                <h3 style="min-height: 2em;">
+                  <a href="https://pelson.github.io/2017/xkcd_font_classifying_strokes/">Classifying segmented strokes as characters - Part 3 of an XKCD font saga</a> <i class="fa fa-fw fa-map-o" title="Field notes"></i>
+                </h3>
+                <div style="float: left; padding: 0.5em 1em 0.5em 0em;">
+                  <time datetime="2017-04-01T00:00:00+01:00" class="icon"></time>
+                  <div class="time-icon">
+                    <p class="year">
+                      2017
+                    </p>
+                    <p class="month">
+                      April
+                    </p><span class="day">1</span>
+                  </div>
+                </div>
+              </header>
+              <div class="body">
+                <p>
+                  In part two of my XKCD font saga I was able to separate strokes from the XKCD handwriting dataset into many smaller images. I also handled the easier cases of merging some of the strokes back together - I particularly focussed on "dotty" or "liney" type glyphs, such as i, !, % and =. Now I want to attribute a unicode character to my segmented images, so that I can subsequently generate a font-file. We are well and truly in the domain of optical character recognition (OCR) here, but because I want absolute control of the results (and 100% accuracy) I'm going to take the simple approach of mapping glyph positions to characters myself.
+                </p>
+              </div>
+              <div style="float: right; padding: 2em; clear: right;">
+                <a href="https://pelson.github.io/2017/xkcd_font_classifying_strokes/" class="btn btn-info clearfix" role="button">Read on...</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <article class=" blog-teaser">
+              <header>
+                <h3 style="min-height: 2em;">
+                  <a href="https://pelson.github.io/2017/xkcd_font_merge_then_extract_glyphs/">Segment, extract, and combine features of an image with SciPy and scikit-image - Part 2 of an XKCD font saga</a> <i class="fa fa-fw fa-map-o" title="Field notes"></i>
+                </h3>
+                <div style="float: left; padding: 0.5em 1em 0.5em 0em;">
+                  <time datetime="2017-03-20T00:00:00+00:00" class="icon"></time>
+                  <div class="time-icon">
+                    <p class="year">
+                      2017
+                    </p>
+                    <p class="month">
+                      March
+                    </p><span class="day">20</span>
+                  </div>
+                </div>
+              </header>
+              <div class="body">
+                <p>
+                  In part one of XKCD font saga I gave some background on the XKCD handwriting dataset, and took an initial look at image segmentation in order to extract the individual strokes from the scanned image. In this installment, I will apply the technique from part 1, as well as attempting to merge together strokes to form (some of) the glyphs desired. I'm going to pay particular attention to "dotted" glyphs, such as "i", "j", ";" and "?". I will need to do future work to merge together non-dotted glyphs such as the two arrows from "≫", as these are indistinguishable from two characters that happen to be close to one another.
+                </p>
+              </div>
+              <div style="float: right; padding: 2em; clear: right;">
+                <a href="https://pelson.github.io/2017/xkcd_font_merge_then_extract_glyphs/" class="btn btn-info clearfix" role="button">Read on...</a>
+              </div>
+            </article>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-xs-12 col-md-6">
             <article class=" blog-teaser">
               <header>
                 <h3 style="min-height: 2em;">
@@ -181,18 +244,6 @@
     <script src="https://pelson.github.io/theme/bootstrap.min.js">
     </script> 
     <script src="https://pelson.github.io/theme/js/scroll.js">
-    </script> 
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-29774503-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
     </script>
   </body>
 </html>
