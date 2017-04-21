@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
+    <loc>https://pelson.github.io/2017/xkcd_font_raster_to_vector_and_basic_font_creation/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://pelson.github.io/2017/xkcd_font_classifying_strokes/</loc>
     <priority>0.8</priority>
   </url>
